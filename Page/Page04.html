@@ -23,6 +23,7 @@
 
 			function cc(id){
 				document.getElementById('tt01').innerHTML=id.value;
+				document.getElementById('tt01').style.fontSize=id.value+"px";
 			}
 		</script>
 	</head>
@@ -63,7 +64,7 @@
 				每周運動次數 <input type="number" name="" id="">
 			</p>
 			<p>
-				生活滿意程度 <input type="range" id="c01" name="" value="50" onchange="cc(c01);"><label id= "tt01">50</label>
+				生活滿意程度 <input type="range" id="c01" name="" value="50" onchange="cc(c01);" ><label style="font-size: 50px;" id= "tt01">50</label>
 			</p>
 			<p>喜好顏色 <input type="color" name="" id=""></p>
 			<p>
