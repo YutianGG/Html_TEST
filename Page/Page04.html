@@ -12,10 +12,19 @@
 				font-size: 30px;	
 			}
 			p{
-				font-family: "OzCaramel";
-				src :"../font/OzCaramel";
+				font-family: "微軟正黑體";
+				src :"../font/OzCaramel.ttf";
 			}
 		</style>
+		<script>
+			function a(){
+					alert("UPLORD!");
+				}
+
+			function cc(id){
+				document.getElementById('tt01').innerHTML=id.value;
+			}
+		</script>
 	</head>
 	<body>
 		<li><a href="Home.html">首頁</a></li>
@@ -23,12 +32,15 @@
 		<form action="Page04.html">
 			<p><span style="font-size: 30px">電子郵件：</span><input type="text" required class="c1" ></p>
 			<p><span style="font-size: 30px">密碼：</span><input type="password" required class="c1"></p>
-			<p><input type="submit"value="確認" style="font-size: 20px ;color:#F5054C"><input type="reset" value="清除"style="font-size: 20px;color:#F5054C"></p>
+			<p><input type="submit"value="確認" style="font-size: 20px ;color:#F5054C">
+				<input type="reset" value="清除"style="font-size: 20px;color:#F5054C"</p>
+		
 		</form>
 		<hr>
 		<form>
-			<p>上傳大頭照：</p>
-			<p><input type="file" required></p>
+			<p>上傳大頭照：</p> 
+			<p><input type="file" required> </p> 
+			<button onclick="a();">上傳</button>
 
 			<p><input type="text" placeholder="姓" required><input type="text" placeholder="名" required></p>
 			<p><input type="tel" placeholder="電話" maxlength="10" required></p>
@@ -51,7 +63,7 @@
 				每周運動次數 <input type="number" name="" id="">
 			</p>
 			<p>
-				生活滿意程度 <input type="range" name="">
+				生活滿意程度 <input type="range" id="c01" name="" value="50" onchange="cc(c01);"><label id= "tt01">50</label>
 			</p>
 			<p>喜好顏色 <input type="color" name="" id=""></p>
 			<p>
